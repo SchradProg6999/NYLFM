@@ -1,0 +1,33 @@
+@import '../../../styles.scss';
+
+.landing-cover {
+    width: 100vw;
+    height: 100vh;
+    //background-image: url('../../../assets/images/landing-page-photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $smoky;
+
+
+    .landing-title-wrapper {
+        .landing-title {
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            color: $white;
+            font-size: 80px;
+            font-weight: 400;
+        }
+    
+        i {
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            color: $white;
+            font-size: 80px;
+            font-weight: 400;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap');
+
+// Theme colors
+$primary: #1F262A;
+$primary-tint: #354147;
+$secondary: #612940;
+$secondary-tint: #9D6381;
+$accent: #CECCCC;
+$accent-tint: #FDECEF;
+$smoky: #0F110C;
+$white: #ffffff;
+$black: #000000;
+
+$font-small: 12px;
+$font-medium: 14px;
+$font-large: 18px;
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: $accent;
+    font-size: $font-small;
+}
+
+a:hover {
+    color: $accent-tint;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary;
+}
+
+p {
+    color: $smoky;
+    font-size: $font-medium;
+}
