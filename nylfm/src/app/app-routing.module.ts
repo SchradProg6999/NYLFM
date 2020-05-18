@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomebasePage } from './pages/homebase/homebase.component';
 
 const routes: Routes = [
-  { path: '',   redirectTo: 'homebase', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '',   redirectTo: 'homebase', pathMatch: 'full' }, // redirect to `homebase`
   { path: 'homebase', component: HomebasePage }
 ];
 

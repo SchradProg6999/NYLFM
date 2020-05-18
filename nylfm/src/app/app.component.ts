@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as SmoothScroll from 'node_modules/smooth-scroll/';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nylfm';
+
+  scroll = new SmoothScroll('a[href*="#"]');
 }

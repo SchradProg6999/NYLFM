@@ -2,13 +2,16 @@
 
 .fixed-nav {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     background-color: $primary;
     padding: 10px 0px;
+    z-index: 100;
+    opacity: .95;
+    border-bottom: 2px solid $secondary;
 
     .logo-wrapper {
         display: inline-block;
-        margin-left: 100px;
+        margin-left: 200px;
 
         .logo {
             vertical-align: top;
@@ -17,14 +20,14 @@
 
         .page-title {
             float: right;
-            color: $accent;
+            color: $light-grey;
             font-weight: 600;
         }
     }
 
     .route-wrapper {
         display: inline-block;
-        margin-right: 100px;
+        margin-right: 200px;
         transform: translateY(50%);
         position: absolute;
         right: 0px;
@@ -38,6 +41,10 @@
         span {
             padding: 0px 8px;
         }
+    }
+
+    .nav-link:hover {
+        transform: translateY(-1px);
     }
 
     .logo {

@@ -1,0 +1,54 @@
+<ion-footer>
+    <div class="footer-content">
+        <div class="logo-wrapper">
+            <img src="../../../assets/images/logo-white.png" class="logo">
+            <p class="logo-subtitle">New York Light Foot Militia</p>
+        </div>
+        <div class="section">
+            <div class="about-us-section">
+                <div class="meet">
+                    <a class="footer-link" href="#">Meet the Militia</a>
+                    <p>We are freedom loving patriots that seek to preserve the constitution.</p>
+                </div>
+                <div class="contact">
+                    <a id="contact" class="footer-link" href="#">Contact Us</a>
+                    <p><i class="contact-icon fas fa-phone-alt"></i>(585) 123-4567</p>
+                    <p><i class="contact-icon fas fa-envelope"></i><a href="mailto:nylfm@gmail.com">nylfm@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="info-section section">
+            <div class="info">
+                <a class="footer-link" href="#">Information</a>
+                <a class="sub-link" href="#">Join the Militia</a>
+                <a class="sub-link" href="#">Who We Are</a>
+                <a class="sub-link" href="#">What We Do</a>
+                <a class="sub-link" href="#">Events</a>
+            </div>
+        </div>
+        <div class="social-section section">
+            <div class="social">
+                <a class="footer-link" href="#">Social</a>
+                <a class="sub-link" href="#">Facebook</a>
+                <a class="sub-link" href="#">Twitter</a>
+                <a class="sub-link" href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="form-section section">
+            <div>
+                <p class="footer-link">Contact Us</p>
+            </div>
+            <div class="contact-form">
+                <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+                    <input placeholder="Your Email Address" class="form-field" type="email" formControlName="email"/>
+                    <input placeholder="Message..." class="form-field" type="textarea" formControlName="message"/>
+                    <button class="button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <hr class="divider"/>
+        <p class="copyright">
+            Copyright&copy; 2020 New York Light Foot Militia. All Rights Reserved
+        </p>
+    </div>
+</ion-footer>
