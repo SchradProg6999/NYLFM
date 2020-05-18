@@ -75,6 +75,7 @@
             display: block;
             margin-bottom: 10px;
             padding: 5px 0px 5px 5px;
+            box-sizing: border-box;
         }
 
         ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
